@@ -19,6 +19,7 @@ A full-stack **Java EE web application** to manage employee records, built using
 
 ## 📁 Project Structure
 
+```bash
 EmployeeManagement/
 ├── src/
 │ ├── main/
@@ -59,7 +60,7 @@ EmployeeManagement/
 ├── target/
 ├── pom.xml
 
-
+```
 ---
 
 ## 🔧 Setup Instructions
