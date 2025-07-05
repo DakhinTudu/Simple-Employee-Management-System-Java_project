@@ -113,15 +113,15 @@ http://localhost:8080/EmployeeManagement/index.html
 | Dashboard         | `/dashboard.jsp`        | Overview and quick links           |
 ```
 
-## Technologies Used
-Java 17+
-Servlets & JSP
-JPA with Hibernate
-MySQL
-Apache Tomcat 10
-Maven
-Eclipse IDE
-SweetAlert (for better alerts)
+## 🛠 Technologies Used
+- Java 17+
+- Servlets & JSP
+- JPA with Hibernate
+- MySQL
+- Apache Tomcat 10
+- Maven
+- Eclipse IDE
+- SweetAlert
 
 ##🔐 Authentication Flow
 Session check is performed on each page using:
@@ -134,7 +134,7 @@ if (session == null || !"success".equals(session.getAttribute("logincheck"))) {
 }
 %>
 
-##📸 Screenshots
+## 📸 Screenshots
 <details> <summary><strong>Click to expand</strong></summary>
 🏠 Home Page
 ![homepage png](https://github.com/user-attachments/assets/71767aae-2524-478d-a46a-73318ac3a6ae)
