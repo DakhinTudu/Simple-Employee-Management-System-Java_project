@@ -1,4 +1,4 @@
-![register-employee png](https://github.com/user-attachments/assets/617e291c-f9a8-41f1-9d36-c966807c4f5c)# 👨‍💼 EmployeeManager Pro
+## 👨‍💼 EmployeeManager Pro
 
 A full-stack **Java EE web application** to manage employee records, built using **Servlets, JSP, Hibernate (JPA), and MySQL**. It allows users to register, update, view, and delete employee information through a modern UI.
 
@@ -101,16 +101,6 @@ Choose Apache Tomcat v10.1+
 
 App starts at:
 http://localhost:8080/EmployeeManagement/index.html
-
-| Page              | Path                    | Description                        |
-| ----------------- | ----------------------- | ---------------------------------- |
-| Login Page        | `/index.html`           | Admin login                        |
-| User Registration | `/userregister.html`    | Create a new admin user            |
-| Register Employee | `/registeremployee.jsp` | Add a new employee                 |
-| View Employees    | `/viewsemployee.jsp`    | List all employees                 |
-| Update Employee   | `/update.jsp`           | Search and update employee details |
-| Delete Employee   | `/delete.jsp`           | Delete employee by ID              |
-| Dashboard         | `/dashboard.jsp`        | Overview and quick links           |
 ```
 
 ## 🛠 Technologies Used
@@ -118,6 +108,7 @@ http://localhost:8080/EmployeeManagement/index.html
 - Servlets & JSP
 - JPA with Hibernate
 - MySQL
+- Lombok
 - Apache Tomcat 10
 - Maven
 - Eclipse IDE
@@ -125,7 +116,7 @@ http://localhost:8080/EmployeeManagement/index.html
 
 ##🔐 Authentication Flow
 Session check is performed on each page using:
-
+```bash
 <%
 session = request.getSession(false);
 if (session == null || !"success".equals(session.getAttribute("logincheck"))) {
@@ -133,43 +124,54 @@ if (session == null || !"success".equals(session.getAttribute("logincheck"))) {
 	return;
 }
 %>
-
+```
 ## 📸 Screenshots
 <details> <summary><strong>Click to expand</strong></summary>
-🏠 Home Page
-![homepage png](https://github.com/user-attachments/assets/71767aae-2524-478d-a46a-73318ac3a6ae)
+	
+##🏠 Home Page
+![homepage png](https://github.com/user-attachments/assets/7ba3d0f2-6213-41f7-b61e-c5d726d78a09)
 
-🔐 Login Page
+
+##🔐 Login Page
 ![login png](https://github.com/user-attachments/assets/0b1fe5df-a981-45bc-810f-d67d8f138086)
 
-🧑‍💼 Admin Dashboard
+
+##🧑‍💼 Admin Dashboard
 ![admin-dashboard png](https://github.com/user-attachments/assets/fad3e5e8-ed36-4fd3-acdf-63f9d76cc344)
 
-➕ Register Employee
+
+##➕ Register Employee
 ![register-employee png](https://github.com/user-attachments/assets/d0ecce1f-77a3-46bb-83a5-53a99dd4558f)
 
-✏️ Update Employee
+
+##✏️ Update Employee
 ![update-employee png](https://github.com/user-attachments/assets/f729365d-a3a4-427c-b60c-cb5b1d34eb03)
 
-👁️ View Employee
+
+##👁️ View Employee
 ![view-employee png](https://github.com/user-attachments/assets/dea44f64-5e36-4727-998b-48f7b9d6b51c)
 
-❌ Delete Employee
+
+##❌ Delete Employee
 ![delete-employee png](https://github.com/user-attachments/assets/fbf2bc21-67c6-4167-984f-9f57dd9e4771)
 
 </details>
 
-##👨‍💻 Author
-Dakhin Tudu
-🔗 GitHub Profile
+## 👨‍💻 Author
 
-##🤝 Contribution
+Dakhin Tudu
+🔗 [GitHub Profile](https://github.com/DakhinTudu)
+
+## 🤝 Contribution
+
 Feel free to fork and contribute to this project! For major changes, please open an issue first.
 
-##📜 License
+## 📜 License
+
 MIT License — Feel free to use and modify this project.
 
 ## 📩 Contact
+
 For suggestions or feedback:
 📧 dtudu195@gmail.com
-🔗 GitHub Profile
+🔗 [GitHub Profile](https://github.com/DakhinTudu)
