@@ -14,53 +14,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-//@WebServlet("/fetchemployee")
-//public class FetchEmployee extends HttpServlet {
-//
-//	EmployeeService employeeService = new EmployeeService();
-//
-//	@Override
-//	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//
-//		PrintWriter pw = resp.getWriter();
-//		if (!isLoggedIn(req)) {
-//
-//			pw.println("<script type='text/javascript'>");
-//			pw.println("alert('User is not logged in');");
-//			pw.println("location='login.html';"); // redirect after alert, change to your desired page
-//			pw.println("</script>");
-//
-//		} else {
-//
-//			Integer id = Integer.parseInt(req.getParameter("id"));
-//
-//			Employee emp = employeeService.findEmployeeById(id);
-//			String data = (emp==null)?"no employee found":emp.toString();
-//			pw.println("<h1>" + data + "</h1>");
-//			RequestDispatcher rd = req.getRequestDispatcher("/response.html");
-//			rd.include(req, resp);
-//			
-//
-//		}
-//
-//	}
-//
-//	private boolean isLoggedIn(HttpServletRequest request) {
-//		Cookie c[] = request.getCookies();
-//		if (c == null)
-//			return false;
-//
-//		for (Cookie c1 : c) {
-//			if (c1.getName().equals("logintest") && c1.getValue().equals("success"))
-//				return true;
-//		}
-//
-//		return false;
-//	}
-//}
-
-
-
 @WebServlet("/fetchemployee")
 public class FetchEmployee extends HttpServlet {
 
